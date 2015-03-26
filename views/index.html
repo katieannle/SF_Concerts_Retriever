@@ -1,0 +1,17 @@
+<div class="jumbotron">
+    <h1>{{title}}</h1>
+    {{#each concerts}}
+      <h3 class="title">{{@key}}</h3>
+        <ul class="list-group">
+        {{#each this}}
+            <li class="list-group-item">
+                <h5 class="list-group-item-heading title"><bold>{{artist}}</bold><br/></h5>
+                <h5 class="list-group-item-text"><small>{{location}}</small></h5>
+            </li>
+        {{else}}
+        <h4>No concerts</h4>
+        {{/each}}
+        </ul>
+    {{/each}}
+</div>
+
